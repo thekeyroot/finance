@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        body {
+            display: flex;
+            flex-direction: row;
+            background-color: #ddd;
+            padding: 16px 8px;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .card-conta {
+            padding: 8px;
+            background-color: #eee;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 8px;
+            gap: 8px;
+            flex-grow: 1;
+        }
+
+        .content-card {
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+            flex-wrap: wrap;
+            border-radius: 8px;
+            width: 100%;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 8px;
+            flex-grow: 1;
+        }
+
+        .titulo {
+            font-size: 16px;
+        }
+
+        .kpi {
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .card-titulo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .page-titulo {
+            width: 100%;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        @media screen {}
+    </style>
+</head>
+
+<body>
+    <p class="page-titulo">Saldo</p>
+    <div class="card-conta" style="background-color: orange;">
+        <p class="card-titulo">Inter</p>
+        <div class="content-card">
+            <div class="card">
+                <p class="titulo">Transações</p>
+                <p class="kpi">R$1200000,12</p>
+            </div>
+            <div class="card">
+                <p class="titulo">Pendencias</p>
+                <p class="kpi">R$19,12</p>
+            </div>
+        </div>
+    </div>
+    <div class="card-conta" style="background-color: blue;">
+        <p class="card-titulo">PicPay</p>
+        <div class="content-card">
+            <div class="card">
+                <p class="titulo">Transações</p>
+                <p class="kpi">R$19,12</p>
+            </div>
+            <div class="card">
+                <p class="titulo">Pendencias</p>
+                <p class="kpi">R$19,12</p>
+            </div>
+        </div>
+    </div>
+    <p class="page-titulo">Ultimas Movimentações</p>
+</body>
+
+</html>
